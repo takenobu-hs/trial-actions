@@ -1,11 +1,11 @@
 
 name: workflow-dispatch
 run-name: UI dispatch
-env:
-  ENV1 : env_1
-  ENV2 : env_2
 on:
   workflow_dispatch:
+    env:
+      ENV1: env_1
+      ENV2: env_2
     inputs:
       logLevel:
         description: 'Log level'
