@@ -1,0 +1,16 @@
+
+name: ci-hello
+run-name: ${{ github.actor }} pushed hello_world
+on: [push]
+  paths:
+    - sub01
+
+jobs:
+  check-compile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile check
+        run: make
+        working-directory: ./sub01
+
