@@ -7,5 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run script
-        run: bash ./.github/scripts/script01.sh
+        run: bash ./scripts/script01.sh
 
