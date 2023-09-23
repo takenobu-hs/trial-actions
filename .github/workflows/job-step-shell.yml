@@ -3,7 +3,7 @@ name: learn-job-step-shell
 run-name: ${{ github.actor }} is learning GitHub Actions (job-step-shell)
 on: [push]
 jobs:
-  check-bats-version:
+  check-path-by-bash:
     runs-on: ubuntu-latest
     steps:
       - name: Display the path
