@@ -1,0 +1,12 @@
+
+name: learn-job-step-shell-script
+run-name: ${{ github.actor }} is learning (job-step-shell-script)
+on: [push]
+jobs:
+  check-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run script
+        run: ./.github/scripts/build.sh
+        shell: bash
+
