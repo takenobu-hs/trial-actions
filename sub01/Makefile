@@ -1,6 +1,7 @@
 
 # Makefile
 
+CC = gcc
 
 TARGETS := main
 
