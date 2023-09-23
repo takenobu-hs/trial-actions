@@ -6,6 +6,7 @@ jobs:
   check-script:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Run script
         run: bash ./scripts/script01.sh
 
