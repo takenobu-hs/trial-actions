@@ -1,0 +1,14 @@
+
+name: learn-job-step-shell-python
+run-name: ${{ github.actor }} is learning (job-step-shell python)
+on: [push]
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display the path
+        run: |
+          import os
+          print(os.environ['PATH`])
+        shell: python
+
