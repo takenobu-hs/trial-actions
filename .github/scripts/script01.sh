@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 echo "Start: script..."
 echo $0
