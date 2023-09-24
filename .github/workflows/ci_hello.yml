@@ -1,7 +1,7 @@
 
 name: ci-hello
 run-name: ${{ github.actor }} pushed hello_world
-on: push
+on: push:
   paths:
     - 'sub01/**'
 
