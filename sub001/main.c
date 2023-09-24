@@ -1,5 +1,5 @@
 
-#include <stdio.h>
+//(!) CI-FAIL TEST // #include <stdio.h>
 
 int main(void) {
 
