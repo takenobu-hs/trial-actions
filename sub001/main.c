@@ -1,11 +1,11 @@
 
-//(!) CI-FAIL TEST // #include <stdio.h>
+#include <stdio.h>
 
 int main(void) {
 
     printf("hello, world\n");
 
-    return 0;
+    x-return 0;    /* for CI-FAIL test */
 }
 
 
