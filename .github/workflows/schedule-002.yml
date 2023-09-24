@@ -12,7 +12,7 @@ run-name: Scheduled
 on:
   schedule:
     # min hour day month year week
-    - cron: '28 11 * * *'
+    - cron: '32 * * * *'
 
 jobs:
   scheduled-ci:
