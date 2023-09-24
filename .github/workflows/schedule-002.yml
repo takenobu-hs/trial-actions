@@ -9,8 +9,10 @@
 
 name: simple-schedule
 run-name: Scheduled
-on: schedule:
-    - cron: '25 11 * * *'
+on:
+  schedule:
+    # min hour day month year week
+    - cron: '28 11 * * *'
 
 jobs:
   scheduled-ci:
