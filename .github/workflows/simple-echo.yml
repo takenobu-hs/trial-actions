@@ -1,0 +1,16 @@
+
+name: simple-echo
+run-name: ${{ github.actor }} pushed
+on: push
+
+jobs:
+  simple-echos
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          date
+          echo "PUSHED! with"
+          echo ${{ github.actor }}
+          echo ${{ github.ref }}
+          echo ${{ github.sha }}
+
