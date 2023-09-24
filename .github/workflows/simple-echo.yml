@@ -4,7 +4,7 @@ run-name: ${{ github.actor }} pushed
 on: push
 
 jobs:
-  simple-echos
+  simple-echos:
     runs-on: ubuntu-latest
     steps:
       - run: |
