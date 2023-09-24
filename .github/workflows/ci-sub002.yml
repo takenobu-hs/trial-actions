@@ -1,10 +1,10 @@
 
-name: ci-hello
-run-name: ${{ github.actor }} pushed hello_world
+name: ci-sub002
+run-name: ${{ github.actor }} pushed sub002
 on:
   push:
     paths:
-      - 'sub01/**'
+      - 'sub002/**'
 
 jobs:
   check-compile:
@@ -13,5 +13,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Compile check
         run: make
-        working-directory: ./sub01
+        working-directory: ./sub002
 
