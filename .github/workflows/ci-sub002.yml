@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - 'sub002/**'
+  workflow_dispatch:
 
 jobs:
   check-compile:
