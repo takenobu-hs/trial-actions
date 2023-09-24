@@ -1,0 +1,17 @@
+
+name: ci-sub02
+run-name: ${{ github.actor }} pushed sub02
+on:
+  push:
+    paths:
+      - 'sub02/**'
+
+jobs:
+  check-compile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile check
+        run: gcc main.c -o main
+        working-directory: ./sub02
+
